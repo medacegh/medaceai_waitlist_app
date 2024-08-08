@@ -45,11 +45,11 @@ export default function Home() {
           Zero Anxiety, Full Confidence: Show Up Ready and Ace Your Med School Interview
         </Typography>
         <Typography variant="body1" gutterBottom>
-          Imagine this, you are sitting down, having a real face to face conversation with an AI Interviewer, tailored to mimic the exact style and question of the med school you are aiming for. You'll get feedback and a score, helping you improve with every session. Make this a reality with MedAce: Your AI-Powered Path to Acceptance!
+          Imagine this, you are sitting down, having a real face to face conversation with an AI Interviewer, tailored to mimic the exact style and question of the med school you are aiming for. You will get feedback and a score, helping you improve with every session. Make this a reality with MedAce: Your AI-Powered Path to Acceptance!
         </Typography>
         {submitted ? (
           <Typography variant="h6" color="primary">
-            Thank you for signing up! We'll keep you updated.
+            Thank you for signing up! We will keep you updated.
           </Typography>
         ) : (
           <>
