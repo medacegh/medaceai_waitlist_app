@@ -5,6 +5,7 @@ import { Box, Typography, Button, Container, TextField, CssBaseline, AppBar, Too
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { firestore } from '@/firebase'; // Adjust the import path if necessary
 import { collection, addDoc } from 'firebase/firestore';
+import Image from 'next/image'; // Importing Next.js Image component
 import '@fontsource/raleway'; // Importing Raleway font
 import '@fontsource/roboto'; // Importing Roboto font
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -77,7 +78,13 @@ export default function Home() {
               MedAce AI
             </Typography>
             <Box>
-              <img src="/logo.png" alt="Logo" style={{ width: '80px', height: 'auto' }} /> {/* Increased logo size */}
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={80}
+                height={80}
+                style={{ height: 'auto' }}  // Keep custom styles if necessary
+              />
             </Box>
           </Toolbar>
         </AppBar>
@@ -148,7 +155,7 @@ export default function Home() {
               Show Up Ready and Ace Your Med School Interview
             </Typography>
             <Typography variant="body1" gutterBottom>
-              Imagine this: you're having a face-to-face conversation with an AI Interviewer, perfectly tailored to mirror the style and questions of your dream med school. Receive instant feedback and scores to elevate your performance with every session. Turn this vision into reality with MedAce: Your AI-Powered Path to Success!
+              Imagine this: you&apos;re having a face-to-face conversation with an AI Interviewer, perfectly tailored to mirror the style and questions of your dream med school. Receive instant feedback and scores to elevate your performance with every session. Turn this vision into reality with MedAce: Your AI-Powered Path to Success!
             </Typography>
             {submitted ? (
               <Typography variant="h6" color="primary" sx={{ marginTop: 2 }}>
